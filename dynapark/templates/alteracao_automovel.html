@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Dados do Automóvel - Dyna Park</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Dyna Park</h1>
+    </header>
+    <main>
+        <h2>Alterar Dados do Automóvel</h2>
+        <form action="/alterar_automovel" method="POST">
+            <label for="modelo">Novo Modelo:</label>
+            <input type="text" id="modelo" name="modelo" required>
+            <label for="placa">Nova Placa:</label>
+            <input type="text" id="placa" name="placa" required>
+            <button type="submit">Alterar</button>
+        </form>
+    </main>
+</body>
+</html>

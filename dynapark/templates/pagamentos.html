@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamentos - Dyna Park</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Dyna Park</h1>
+    </header>
+    <main>
+        <h2>Realizar Pagamento</h2>
+        <form action="/pagamento" method="POST">
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" name="valor" required>
+            <label for="metodo">Método de Pagamento:</label>
+            <select id="metodo" name="metodo">
+                <option value="cartao">Cartão de Crédito</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            <button type="submit">Pagar</button>
+        </form>
+    </main>
+</body>
+</html>

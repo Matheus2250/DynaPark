@@ -1,0 +1,139 @@
+/* Estilos Globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2B003A; /* Fundo roxo escuro */
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #F57B9A; /* Rosa-choque */
+}
+
+/* Estilos do Cabeçalho */
+header {
+    background-color: #2B003A;
+    padding: 10px;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+header a:hover {
+    color: #F57B9A; /* Rosa-choque */
+}
+
+/* Seção principal (Home) */
+section.home {
+    background-color: #4A1056; /* Um roxo mais claro */
+    padding: 20px;
+    text-align: center;
+}
+
+section.home h1 {
+    font-size: 36px;
+}
+
+section.home p {
+    font-size: 18px;
+}
+
+.button {
+    background-color: #F57B9A; /* Botão rosa-choque */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #C76786;
+}
+
+/* Estilo das Caixas e Ícones */
+.box {
+    background-color: #F57B9A; /* Fundo rosa-choque */
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+.box img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #2B003A;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Rodapé */
+footer a {
+    color: #F57B9A;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Menu Navegação Inferior (versão mobile) */
+nav {
+    background-color: #4A1056;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #F57B9A;
+}
+
+.icon {
+    display: block;
+    font-size: 24px;
+}
+
+/* Estilos das Páginas Internas */
+.page {
+    padding: 20px;
+}
+
+.page h2 {
+    color: #F57B9A;
+    text-align: center;
+}
+
+/* Estilos dos Cards (Configurações, Veículos, etc) */
+.card {
+    background-color: #4A1056;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #D3D3D3; /* Cinza claro */
+}

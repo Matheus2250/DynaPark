@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Forma de Pagamento - Dyna Park</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Dyna Park</h1>
+    </header>
+    <main>
+        <h2>Adicionar Forma de Pagamento</h2>
+        <form action="/adicionar_pagamento" method="POST">
+            <label for="metodo">Novo Método:</label>
+            <input type="text" id="metodo" name="metodo" required>
+            <button type="submit">Adicionar</button>
+        </form>
+    </main>
+</body>
+</html>
