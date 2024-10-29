@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - Dyna Park</title>
+    <link rel="stylesheet" href="styles/auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h1>Pagamento</h1>
+        
+        <!-- Seleção do Tipo de Pagamento -->
+        <label for="tipo-pagamento">Escolha o método de pagamento</label>
+        <select id="tipo-pagamento">
+            <option value="">Selecione</option>
+            <option value="cartao">Cartão</option>
+            <option value="pix">PIX</option>
+        </select>
+
+        <!-- Formulário de pagamento com cartão (inicialmente oculto) -->
+        <form id="payment-form" style="display: none;">
+            <h2>Pagamento com Cartão</h2>
+            <label for="numero-cartao">Número do Cartão</label>
+            <input type="text" id="numero-cartao" placeholder="Digite o número do cartão" required>
+
+            <label for="validade">Validade</label>
+            <input type="text" id="validade" placeholder="MM/AA" required>
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" placeholder="Código de segurança" required>
+
+            <button type="submit">Pagar com Cartão</button>
+        </form>
+
+        <!-- Formulário de pagamento com PIX (inicialmente oculto) -->
+        <form id="pix-form" style="display: none;">
+            <h2>Pagamento com PIX</h2>
+            <label for="tipo-pix">Escolha o tipo de chave PIX</label>
+            <select id="tipo-pix" required>
+                <option value="">Selecione</option>
+                <option value="email">Email</option>
+                <option value="cpf">CPF</option>
+                <option value="numero">Número</option>
+            </select>
+
+            <label for="chave-pix">Digite a chave PIX</label>
+            <input type="text" id="chave-pix" placeholder="Digite a chave PIX" required>
+
+            <button type="button" id="gerar-qr">Gerar QR Code para PIX</button>
+        </form>
+
+        <!-- Área para exibir o QR Code -->
+        <div id="qr-code-container" style="display: none; margin-top: 20px;">
+            <p>Escaneie o QR Code para pagamento:</p>
+            <img id="qr-code" src="" alt="QR Code de pagamento PIX">
+        </div>
+
+        <!-- Botão de retorno ao index -->
+        <p><a href="index.html">Voltar à página inicial</a></p>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

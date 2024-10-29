@@ -1,0 +1,118 @@
+/* Centralizar a página */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7f9fc;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+}
+
+.auth-container h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.auth-container h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo do formulário */
+}
+
+.auth-container label {
+    width: 100%; /* Garante que o rótulo ocupe a largura total do contêiner */
+    text-align: left;
+    margin: 0.5rem 0 0.25rem;
+    font-size: 14px;
+    color: #555;
+}
+
+.auth-container input, .auth-container select {
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    transition: border 0.3s ease;
+}
+
+.auth-container input:focus, .auth-container select:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.auth-container button {
+    padding: 10px;
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-container button:hover {
+    background-color: #555;
+}
+
+.auth-container p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.auth-container a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos adicionais para o QR Code */
+#qr-code-container {
+    text-align: center;
+}
+
+#qr-code-container img {
+    max-width: 200px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.auth-container p a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.auth-container p a:hover {
+    text-decoration: underline;
+}

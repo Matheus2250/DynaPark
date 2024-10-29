@@ -1,0 +1,89 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+section {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#contador-vagas span {
+    font-weight: bold;
+    color: green;
+}
+
+/* Transições suaves para feedback ao usuário */
+form input, form button {
+    transition: all 0.3s ease;
+}
+
+form input:focus, form button:hover {
+    transform: scale(1.05);
+}
+
+/* Feedback de sucesso */
+#status-pagamento {
+    font-weight: bold;
+    color: green;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
